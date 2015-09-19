@@ -20,8 +20,8 @@ help.operation = ^{
     [weakSelf.navigationController pushViewController:helpVC animated:YES];
 };
 ```
-```objc
 ## cell的设置
+```objc
 ZFSettingGroup *group = [[ZFSettingGroup alloc] init];
 group.header = @"高级设置";
 group.footer = @"这是footer";
