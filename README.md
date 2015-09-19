@@ -4,10 +4,8 @@
 ### 效果演示：
 ![image](https://github.com/renzifeng/ZFSetting/raw/master/ZFSetting.gif)
 
-#用法：直接继承ZFBaseSettingViewController，创建UIViewController的类，实现以下方法就可以实现设置页面的显示。
+- 用法：直接继承ZFBaseSettingViewController，创建UIViewController的类，实现以下方法就可以实现设置页面的显示。
 #用法示例
-
-
 ## 初始化Item
 ``` objc
 __weak typeof(self) weakSelf = self;
