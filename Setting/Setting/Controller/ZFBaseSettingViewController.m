@@ -52,6 +52,13 @@
     // 2.取出这行对应的模型（ZFSettingItem）
     ZFSettingGroup *group = _allGroups[indexPath.section];
     cell.item = group.items[indexPath.row];
+    __block ZFSettingCell *weakCell = cell;
+    cell.switchChangeBlock = ^ (BOOL on){
+        if (weakCell.item.switchBlock) {
+            weakCell.item.switchBlock(on);
+        }
+    };
+
     return cell;
 }
 

@@ -19,6 +19,8 @@ typedef enum : NSInteger{
 @property (nonatomic, copy) NSString *icon;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, assign) ZFSettingItemType type;// Cell的样式
+/** cell上开关的操作事件 */
+@property (nonatomic, copy) void (^switchBlock)(BOOL on) ;
 @property (nonatomic, copy) void (^operation)() ; // 点击cell后要执行的操作
 
 + (id)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type;

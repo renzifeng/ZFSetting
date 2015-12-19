@@ -30,6 +30,7 @@
     __weak typeof(self) weakSelf = self;
     // 1.1.推送和提醒
     ZFSettingItem *push = [ZFSettingItem itemWithIcon:@"MorePush" title:@"新消息通知" type:ZFSettingItemTypeArrow];
+    //cell点击事件
     push.operation = ^{
         ZFPushNoticeViewController *notice = [[ZFPushNoticeViewController alloc] init];
         [weakSelf.navigationController pushViewController:notice animated:YES];
@@ -37,6 +38,10 @@
     
     // 1.2.声音提示
     ZFSettingItem *shake = [ZFSettingItem itemWithIcon:@"sound_Effect" title:@"声音提示" type:ZFSettingItemTypeSwitch];
+    //开关事件
+    shake.switchBlock = ^(BOOL on) {
+        NSLog(@"声音提示%zd",on);
+    };
     
     ZFSettingGroup *group = [[ZFSettingGroup alloc] init];
     group.header = @"基本设置";
