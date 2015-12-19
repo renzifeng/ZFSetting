@@ -19,6 +19,12 @@ help.operation = ^{
     helpVC.title = @"帮助";
     [weakSelf.navigationController pushViewController:helpVC animated:YES];
 };
+ZFSettingItem *shake = [ZFSettingItem itemWithIcon:@"sound_Effect" title:@"声音提示" type:ZFSettingItemTypeSwitch];
+//开关事件
+shake.switchBlock = ^(BOOL on) {
+    NSLog(@"声音提示%zd",on);
+};
+
 ```
 ## cell的设置
 ```objc
