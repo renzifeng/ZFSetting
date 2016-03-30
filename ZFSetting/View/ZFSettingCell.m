@@ -60,6 +60,7 @@
         
         if (_switch == nil) {
             _switch = [[UISwitch alloc] init];
+            [_switch addTarget:self action:@selector(switchStatusChanged:) forControlEvents:UIControlEventValueChanged];
         }
         
         // 右边显示开关
@@ -74,6 +75,15 @@
         // 用默认的选中样式
         self.selectionStyle = UITableViewCellSelectionStyleBlue;
         
+    }
+}
+
+#pragma mark - SwitchValueChanged
+
+- (void)switchStatusChanged:(UISwitch *)sender
+{
+    if (self.switchChangeBlock) {
+        self.switchChangeBlock(sender.on);
     }
 }
 @end

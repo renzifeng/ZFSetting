@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2CC64D1CA381A90028BBDD /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2CC6441CA381A90028BBDD /* ZFBaseSettingViewController.m */; };
+		CC2CC64E1CA381A90028BBDD /* ZFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2CC6471CA381A90028BBDD /* ZFSettingGroup.m */; };
+		CC2CC64F1CA381A90028BBDD /* ZFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2CC6491CA381A90028BBDD /* ZFSettingItem.m */; };
+		CC2CC6501CA381A90028BBDD /* ZFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2CC64C1CA381A90028BBDD /* ZFSettingCell.m */; };
 		CC9523F31BADA07D0040FF08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9523F21BADA07D0040FF08 /* main.m */; };
 		CC9523F61BADA07D0040FF08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9523F51BADA07D0040FF08 /* AppDelegate.m */; };
 		CC9523FC1BADA07D0040FF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9523FA1BADA07D0040FF08 /* Main.storyboard */; };
-		CC9523FF1BADA07D0040FF08 /* Setting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC9523FD1BADA07D0040FF08 /* Setting.xcdatamodeld */; };
 		CC9524011BADA07D0040FF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9524001BADA07D0040FF08 /* Assets.xcassets */; };
 		CC9524041BADA07D0040FF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9524021BADA07D0040FF08 /* LaunchScreen.storyboard */; };
 		CC95240F1BADA07D0040FF08 /* SettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC95240E1BADA07D0040FF08 /* SettingTests.m */; };
 		CC95241A1BADA07D0040FF08 /* SettingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524191BADA07D0040FF08 /* SettingUITests.m */; };
-		CC9524581BADA09E0040FF08 /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524291BADA09E0040FF08 /* ZFBaseSettingViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CC95245B1BADA09E0040FF08 /* ZFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524301BADA09E0040FF08 /* ZFSettingGroup.m */; settings = {ASSET_TAGS = (); }; };
-		CC95245C1BADA09E0040FF08 /* ZFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524321BADA09E0040FF08 /* ZFSettingItem.m */; settings = {ASSET_TAGS = (); }; };
-		CC9524731BADA09E0040FF08 /* ZFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524571BADA09E0040FF08 /* ZFSettingCell.m */; settings = {ASSET_TAGS = (); }; };
-		CC9524781BADA90A0040FF08 /* ZFettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524741BADA90A0040FF08 /* ZFettingViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CC9524791BADA90A0040FF08 /* ZFPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524761BADA90A0040FF08 /* ZFPushNoticeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CC9524781BADA90A0040FF08 /* ZFettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524741BADA90A0040FF08 /* ZFettingViewController.m */; };
+		CC9524791BADA90A0040FF08 /* ZFPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9524761BADA90A0040FF08 /* ZFPushNoticeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2CC6431CA381A90028BBDD /* ZFBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseSettingViewController.h; sourceTree = "<group>"; };
+		CC2CC6441CA381A90028BBDD /* ZFBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseSettingViewController.m; sourceTree = "<group>"; };
+		CC2CC6461CA381A90028BBDD /* ZFSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingGroup.h; sourceTree = "<group>"; };
+		CC2CC6471CA381A90028BBDD /* ZFSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingGroup.m; sourceTree = "<group>"; };
+		CC2CC6481CA381A90028BBDD /* ZFSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingItem.h; sourceTree = "<group>"; };
+		CC2CC6491CA381A90028BBDD /* ZFSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingItem.m; sourceTree = "<group>"; };
+		CC2CC64B1CA381A90028BBDD /* ZFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingCell.h; sourceTree = "<group>"; };
+		CC2CC64C1CA381A90028BBDD /* ZFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingCell.m; sourceTree = "<group>"; };
 		CC9523EE1BADA07D0040FF08 /* Setting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Setting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9523F21BADA07D0040FF08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC9523F41BADA07D0040FF08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC9523F51BADA07D0040FF08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC9523FB1BADA07D0040FF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC9523FE1BADA07D0040FF08 /* Setting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Setting.xcdatamodel; sourceTree = "<group>"; };
 		CC9524001BADA07D0040FF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9524031BADA07D0040FF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC9524051BADA07D0040FF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,14 +62,6 @@
 		CC9524151BADA07D0040FF08 /* SettingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9524191BADA07D0040FF08 /* SettingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingUITests.m; sourceTree = "<group>"; };
 		CC95241B1BADA07D0040FF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC9524281BADA09E0040FF08 /* ZFBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseSettingViewController.h; sourceTree = "<group>"; };
-		CC9524291BADA09E0040FF08 /* ZFBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseSettingViewController.m; sourceTree = "<group>"; };
-		CC95242F1BADA09E0040FF08 /* ZFSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingGroup.h; sourceTree = "<group>"; };
-		CC9524301BADA09E0040FF08 /* ZFSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingGroup.m; sourceTree = "<group>"; };
-		CC9524311BADA09E0040FF08 /* ZFSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingItem.h; sourceTree = "<group>"; };
-		CC9524321BADA09E0040FF08 /* ZFSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingItem.m; sourceTree = "<group>"; };
-		CC9524561BADA09E0040FF08 /* ZFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingCell.h; sourceTree = "<group>"; };
-		CC9524571BADA09E0040FF08 /* ZFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSettingCell.m; sourceTree = "<group>"; };
 		CC9524741BADA90A0040FF08 /* ZFettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFettingViewController.m; sourceTree = "<group>"; };
 		CC9524751BADA90A0040FF08 /* ZFPushNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPushNoticeViewController.h; sourceTree = "<group>"; };
 		CC9524761BADA90A0040FF08 /* ZFPushNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPushNoticeViewController.m; sourceTree = "<group>"; };
@@ -95,6 +93,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC2CC6411CA381A90028BBDD /* ZFSetting */ = {
+			isa = PBXGroup;
+			children = (
+				CC2CC6421CA381A90028BBDD /* Controller */,
+				CC2CC6451CA381A90028BBDD /* Model */,
+				CC2CC64A1CA381A90028BBDD /* View */,
+			);
+			name = ZFSetting;
+			path = ../ZFSetting;
+			sourceTree = SOURCE_ROOT;
+		};
+		CC2CC6421CA381A90028BBDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC2CC6431CA381A90028BBDD /* ZFBaseSettingViewController.h */,
+				CC2CC6441CA381A90028BBDD /* ZFBaseSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC2CC6451CA381A90028BBDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC2CC6461CA381A90028BBDD /* ZFSettingGroup.h */,
+				CC2CC6471CA381A90028BBDD /* ZFSettingGroup.m */,
+				CC2CC6481CA381A90028BBDD /* ZFSettingItem.h */,
+				CC2CC6491CA381A90028BBDD /* ZFSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC2CC64A1CA381A90028BBDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC2CC64B1CA381A90028BBDD /* ZFSettingCell.h */,
+				CC2CC64C1CA381A90028BBDD /* ZFSettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CC9523E51BADA07D0040FF08 = {
 			isa = PBXGroup;
 			children = (
@@ -118,20 +156,17 @@
 		CC9523F01BADA07D0040FF08 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				CC2CC6411CA381A90028BBDD /* ZFSetting */,
 				CC9523F41BADA07D0040FF08 /* AppDelegate.h */,
 				CC9523F51BADA07D0040FF08 /* AppDelegate.m */,
 				CC9524771BADA90A0040FF08 /* ZFSettingViewController.h */,
 				CC9524741BADA90A0040FF08 /* ZFettingViewController.m */,
 				CC9524751BADA90A0040FF08 /* ZFPushNoticeViewController.h */,
 				CC9524761BADA90A0040FF08 /* ZFPushNoticeViewController.m */,
-				CC9524271BADA09E0040FF08 /* Controller */,
-				CC95242E1BADA09E0040FF08 /* Model */,
-				CC9524551BADA09E0040FF08 /* View */,
 				CC9523FA1BADA07D0040FF08 /* Main.storyboard */,
 				CC9524001BADA07D0040FF08 /* Assets.xcassets */,
 				CC9524021BADA07D0040FF08 /* LaunchScreen.storyboard */,
 				CC9524051BADA07D0040FF08 /* Info.plist */,
-				CC9523FD1BADA07D0040FF08 /* Setting.xcdatamodeld */,
 				CC9523F11BADA07D0040FF08 /* Supporting Files */,
 			);
 			path = Setting;
@@ -161,35 +196,6 @@
 				CC95241B1BADA07D0040FF08 /* Info.plist */,
 			);
 			path = SettingUITests;
-			sourceTree = "<group>";
-		};
-		CC9524271BADA09E0040FF08 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CC9524281BADA09E0040FF08 /* ZFBaseSettingViewController.h */,
-				CC9524291BADA09E0040FF08 /* ZFBaseSettingViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CC95242E1BADA09E0040FF08 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CC95242F1BADA09E0040FF08 /* ZFSettingGroup.h */,
-				CC9524301BADA09E0040FF08 /* ZFSettingGroup.m */,
-				CC9524311BADA09E0040FF08 /* ZFSettingItem.h */,
-				CC9524321BADA09E0040FF08 /* ZFSettingItem.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CC9524551BADA09E0040FF08 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CC9524561BADA09E0040FF08 /* ZFSettingCell.h */,
-				CC9524571BADA09E0040FF08 /* ZFSettingCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,14 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9524731BADA09E0040FF08 /* ZFSettingCell.m in Sources */,
-				CC95245C1BADA09E0040FF08 /* ZFSettingItem.m in Sources */,
-				CC95245B1BADA09E0040FF08 /* ZFSettingGroup.m in Sources */,
+				CC2CC6501CA381A90028BBDD /* ZFSettingCell.m in Sources */,
+				CC2CC64F1CA381A90028BBDD /* ZFSettingItem.m in Sources */,
 				CC9523F61BADA07D0040FF08 /* AppDelegate.m in Sources */,
-				CC9523FF1BADA07D0040FF08 /* Setting.xcdatamodeld in Sources */,
 				CC9524781BADA90A0040FF08 /* ZFettingViewController.m in Sources */,
-				CC9524581BADA09E0040FF08 /* ZFBaseSettingViewController.m in Sources */,
+				CC2CC64E1CA381A90028BBDD /* ZFSettingGroup.m in Sources */,
 				CC9524791BADA90A0040FF08 /* ZFPushNoticeViewController.m in Sources */,
+				CC2CC64D1CA381A90028BBDD /* ZFBaseSettingViewController.m in Sources */,
 				CC9523F31BADA07D0040FF08 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,19 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CC9523FD1BADA07D0040FF08 /* Setting.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CC9523FE1BADA07D0040FF08 /* Setting.xcdatamodel */,
-			);
-			currentVersion = CC9523FE1BADA07D0040FF08 /* Setting.xcdatamodel */;
-			path = Setting.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CC9523E61BADA07D0040FF08 /* Project object */;
 }
