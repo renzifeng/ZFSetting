@@ -9,12 +9,13 @@
 #import "ZFSettingItem.h"
 
 @implementation ZFSettingItem
-+ (id)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type
-{
+
++ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type {
     ZFSettingItem *item = [[self alloc] init];
     item.icon = icon;
     item.title = title;
     item.type = type;
     return item;
 }
+
 @end

@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ZFSettingGroup : NSObject
-@property (nonatomic, copy) NSString *header; // 头部标题
-@property (nonatomic, copy) NSString *footer; // 尾部标题
-@property (nonatomic, strong) NSArray *items; // 中间的条目
-
+/// 头部标题
+@property (nonatomic, copy) NSString *header;
+/// 尾部标题
+@property (nonatomic, copy) NSString *footer;
+/// 中间的条目
+@property (nonatomic, strong) NSArray *items;
 
 @end

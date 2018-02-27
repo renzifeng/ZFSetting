@@ -9,19 +9,26 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum : NSInteger{
+typedef NS_ENUM(NSInteger, ZFSettingItemType) {
     ZFSettingItemTypeNone, // 什么也没有
     ZFSettingItemTypeArrow, // 箭头
     ZFSettingItemTypeSwitch // 开关
-} ZFSettingItemType;
+};
 
 @interface ZFSettingItem : NSObject
+/// 图标
 @property (nonatomic, copy) NSString *icon;
+/// 标题
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, assign) ZFSettingItemType type;// Cell的样式
-/** cell上开关的操作事件 */
-@property (nonatomic, copy) void (^switchBlock)(BOOL on) ;
-@property (nonatomic, copy) void (^operation)() ; // 点击cell后要执行的操作
+/// 设置开关
+@property (nonatomic, assign, getter=isSwitchOn) BOOL switchOn;
+/// cell的样式
+@property (nonatomic, assign) ZFSettingItemType type;
+/// cell上开关的操作事件
+@property (nonatomic, copy) void (^switchBlock)(BOOL on);
+/// 点击cell后要执行的操作
+@property (nonatomic, copy) void (^operation)();
 
-+ (id)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type;
++ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type;
+
 @end

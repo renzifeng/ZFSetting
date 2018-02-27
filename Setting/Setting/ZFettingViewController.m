@@ -13,8 +13,8 @@
 @end
 
 @implementation ZFSettingViewController
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // 1.第0组：3个
@@ -25,8 +25,8 @@
 }
 
 #pragma mark 添加第0组的模型数据
-- (void)add0SectionItems
-{
+
+- (void)add0SectionItems {
     __weak typeof(self) weakSelf = self;
     // 1.1.推送和提醒
     ZFSettingItem *push = [ZFSettingItem itemWithIcon:@"MorePush" title:@"新消息通知" type:ZFSettingItemTypeArrow];
@@ -38,6 +38,7 @@
     
     // 1.2.声音提示
     ZFSettingItem *shake = [ZFSettingItem itemWithIcon:@"sound_Effect" title:@"声音提示" type:ZFSettingItemTypeSwitch];
+    shake.switchOn = YES;
     //开关事件
     shake.switchBlock = ^(BOOL on) {
         NSLog(@"声音提示%zd",on);
@@ -50,8 +51,7 @@
 }
 
 #pragma mark 添加第1组的模型数据
-- (void)add1SectionItems
-{
+- (void)add1SectionItems {
     __weak typeof(self) weakSelf = self;
     // 帮助
     ZFSettingItem *help = [ZFSettingItem itemWithIcon:@"MoreHelp" title:@"帮助" type:ZFSettingItemTypeArrow];
@@ -86,4 +86,5 @@
     group.items = @[ help, share , about];
     [_allGroups addObject:group];
 }
+
 @end
