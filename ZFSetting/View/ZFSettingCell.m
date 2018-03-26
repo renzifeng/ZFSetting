@@ -42,7 +42,7 @@
 - (void)setItem:(ZFSettingItem *)item {
     _item = item;
     // 设置数据
-    self.imageView.image = [UIImage imageNamed:item.icon];
+	self.imageView.image = item.icon.length ? [UIImage imageNamed:item.icon] : nil;
     self.textLabel.text = item.title;
     if (item.type == ZFSettingItemTypeArrow) {
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
