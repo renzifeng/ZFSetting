@@ -53,7 +53,9 @@
             _switch = [[UISwitch alloc] init];
             _switch.on = item.switchOn;
             [_switch addTarget:self action:@selector(switchStatusChanged:) forControlEvents:UIControlEventValueChanged];
-        }
+		} else {
+			[_switch setOn:item.switchOn animated:YES];
+		}
         // 右边显示开关
         self.accessoryView = _switch;
         // 禁止选中
