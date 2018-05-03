@@ -9,10 +9,10 @@
 ### 效果演示：
 ![image](https://github.com/renzifeng/ZFSetting/raw/master/ZFSetting.gif)
 
-#Installation with CocoaPods
+# Installation with CocoaPods
 	pod 'ZFSetting'
 	
-#How To Use
+# How To Use
 直接继承ZFBaseSettingViewController，创建UIViewController的类，实现以下方法就可以实现设置页面的显示。
 
 ``` objc
