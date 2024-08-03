@@ -12,7 +12,8 @@
 typedef NS_ENUM(NSInteger, ZFSettingItemType) {
     ZFSettingItemTypeNone, // 什么也没有
     ZFSettingItemTypeArrow, // 箭头
-    ZFSettingItemTypeSwitch // 开关
+    ZFSettingItemTypeSwitch, // 开关
+    ZFSettingItemTypeText  //文本
 };
 
 @interface ZFSettingItem : NSObject
@@ -20,6 +21,7 @@ typedef NS_ENUM(NSInteger, ZFSettingItemType) {
 @property (nonatomic, copy) NSString *icon;
 /// 标题
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *text;
 /// 设置开关
 @property (nonatomic, assign, getter=isSwitchOn) BOOL switchOn;
 /// cell的样式
@@ -30,5 +32,7 @@ typedef NS_ENUM(NSInteger, ZFSettingItemType) {
 @property (nonatomic, copy) void (^operation)();
 
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type;
+
++ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type text:(NSString *)text;
 
 @end

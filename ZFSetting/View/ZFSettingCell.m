@@ -11,6 +11,7 @@
 
 @interface ZFSettingCell() {
     UISwitch *_switch;
+    UILabel *_text;
 }
 @end
 
@@ -42,7 +43,7 @@
 - (void)setItem:(ZFSettingItem *)item {
     _item = item;
     // 设置数据
-	self.imageView.image = item.icon.length ? [UIImage imageNamed:item.icon] : nil;
+    self.imageView.image = item.icon.length ? [UIImage imageNamed:item.icon] : nil;
     self.textLabel.text = item.title;
     if (item.type == ZFSettingItemTypeArrow) {
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -53,13 +54,22 @@
             _switch = [[UISwitch alloc] init];
             _switch.on = item.switchOn;
             [_switch addTarget:self action:@selector(switchStatusChanged:) forControlEvents:UIControlEventValueChanged];
-	} else {
-	    [_switch setOn:item.switchOn animated:YES];
-	}
+        } else {
+            [_switch setOn:item.switchOn animated:YES];
+        }
         // 右边显示开关
         self.accessoryView = _switch;
         // 禁止选中
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }else if(item.type == ZFSettingItemTypeText){
+        UILabel *rightLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,0,item.text.length*10,self.frame.size.height)];
+        rightLabel.text=item.text;
+        //rightLabel.textAlignment = NSTextAlignment;
+        self.accessoryView= rightLabel;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        // 用默认的选中样式
+        self.selectionStyle = UITableViewCellSelectionStyleBlue;
+        //self.accessoryView.backgroundColor= [UIColor lightGrayColor];   //加上红色容易看清楚
     } else {
         // 什么也没有，清空右边显示的view
         self.accessoryView = nil;

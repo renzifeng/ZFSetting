@@ -10,11 +10,20 @@
 
 @implementation ZFSettingItem
 
-+ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type {
++ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type{
     ZFSettingItem *item = [[self alloc] init];
     item.icon = icon;
     item.title = title;
     item.type = type;
+    return item;
+}
+
++ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(ZFSettingItemType)type text:(NSString *)text{
+    ZFSettingItem *item = [[self alloc] init];
+    item.icon = icon;
+    item.title = title;
+    item.type = type;
+    item.text=text;
     return item;
 }
 
